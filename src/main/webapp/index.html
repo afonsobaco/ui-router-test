@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="/sefa-ui/v1/js/angular-1.5.8/angular.min.js?201810311609"></script>
+<script src="lib/angular-ui-router.js"></script>
+
+<!--  Hello solarsystem Code -->
+<script src="hellosolarsystem.js"></script>
+<script src="services/people.js"></script>
+<script src="components/hello.js"></script>
+<script src="components/about.js"></script>
+<script src="components/people.js"></script>
+<script src="components/person.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="hellosolarsystem">
+	<div class="nav">
+      <a ui-sref="hello" ui-sref-active="active">Hello</a>
+      <a ui-sref="about" ui-sref-active="active">About</a>
+      <a ui-sref="people" ui-sref-active="active">People</a>
+    </div>
+    
+	<ui-view></ui-view>
+</body>
+</html>
